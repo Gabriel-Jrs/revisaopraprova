@@ -1,46 +1,67 @@
 # REVISÃO PARA A PROVA
 
-1) NaN (Not-a-Number) é um valor especial no JavaScript que representa um resultado indefinido ou inválido em operações numéricas. Apesar do nome, NaN pertence ao tipo Number, ou seja, ele é considerado numericamente como um número inválido. O JavaScript retorna NaN quando tenta realizar operações aritméticas com valores que não podem ser convertidos de maneira válida em números. Isso ocorre, por exemplo, ao tentar converter uma string não numérica em número, ou ao realizar divisões incorretas.
+1- O significa "Not-a-Number", situação que acontece quando, por exemplo, em uma divisão por 0: 0/0
 
-Um dos casos mais comuns que resultam em NaN é quando se usa a função parseInt() ou Number() em uma string que não contém números válidos. Também ocorre ao tentar multiplicar uma string de texto com um número ou ao dividir zero por zero.
+2- CSS inlane:
+    <p style="color: blue; text-align: center;">CSSSSSSSSSSSSSS .</p>
+CSS Embutido:
+    <head>
+      <style>
+        p {
+          color: green;
+        }
+        h1 {
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>TTTTTTTTTTTT</h1>
+      <p>Csssssssss.</p>
+    </body>
+CSS externo:
+    <head>
+      <link rel="stylesheet" type="text/css" href="estilos.css">
+    </head>
+    <body>
+      <h1>Título centralizado com fonte maior</h1>
+      <p>Este texto está formatado com CSS externo.</p>
+    </body>
 
-Exemplo:
+3-O <div> é para grandes blocos, enquanto o <span> é para pequenos trechos de conteúdo inline. Ambos são fundamentais para a estrutura e estilização de páginas web. 
+div:
+    <div class="header">
+      <h1>Meu Site</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+      <p>Este é o conteúdo principal do site.</p>
+      <img src="imagem.jpg" alt="Uma imagem">
+    </div>
+span:
+    <p>Este é um parágrafo com uma <span style="color: blue;">palavra em azul</span> e outra <span style="font-weight: bold;">em negrito</span>.</p>
 
-let resultado = "texto" * 2;
-console.log(resultado); // NaN
+4- A tag <head> em um documento HTML define a seção de metadados do documento, ou seja, informações sobre o próprio HTML, que não são exibidas diretamente na página web, ela pode conter links, tittle and style
 
-
-Outro exemplo:
-
-let numero = Number("abc");
-console.log(numero); // NaN
-
-
-NaN tamBém possui comportamentos peculiares. Por exemplo, ele não é igual nem a si mesmo:
-
-console.log(NaN === NaN); // false
-Por isso, para verificar se um valor é NaN, deve-se usar a função isNaN().
-
-
-5) Listas ordenadas <ol> apresentam itens numerados, o que indica uma sequência ou ordem de execução. Já listas não ordenadas <ul> usam marcadores simples (como bolinhas) e não indicam ordem.
-
-Exemplo de lista ordenada:
-
-<ol>
-  <li>Ligar o computador</li>
-  <li>Abrir o navegador</li>
-  <li>Acessar o site</li>
-</ol>
-
-
-Exemplo de lista não ordenada:
-
+5-A principal diferença entre as tags HTML <ul> e <ol> reside no tipo de lista que elas representam. <ul> (unordered list) é usada para criar listas não ordenadas, onde a ordem dos itens não é importante, e por padrão, os itens são exibidos com marcadores. <ol> (ordered list) é usada para listas ordenadas, onde a ordem dos itens é relevante, e por padrão, os itens são exibidos com números. 
+ul:
 <ul>
-  <li>Arroz</li>
-  <li>Feijão</li>
-  <li>Carne</li>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
 </ul>
-
+ol:
+<ol>
+  <li>Passo 1</li>
+  <li>Passo 2</li>
+  <li>Passo 3</li>
+</ol>
 
 6) A propriedade display no CSS define como um elemento deve ser exibido no layout da página. Ela determina se o elemento ocupa uma linha inteira, se fica ao lado de outros elementos ou se se comporta como uma combinação dos dois.
 
@@ -307,3 +328,4 @@ else if (poder2 > poder1) console.log(`Vencedor: ${p2.nome}`);
 
 
 else console.log("Empate!");
+
