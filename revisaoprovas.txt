@@ -21,52 +21,6 @@ NaN tamBém possui comportamentos peculiares. Por exemplo, ele não é igual nem
 console.log(NaN === NaN); // false
 Por isso, para verificar se um valor é NaN, deve-se usar a função isNaN().
 
-2) As três formas principais de aplicar CSS em um documento HTML são:
-
-Inline: Estilo adicionado diretamente na tag HTML por meio do atributo style. É útil para alterações pontuais, mas dificulta a manutenção.
-Exemplo: <p style="color: red;">Texto vermelho</p>
-
-Interno (ou embutido): CSS incluído dentro da tag <style> no cabeçalho (<head>) do HTML. É usado quando se deseja aplicar estilo àquela página específica.
-Exemplo:
-
-<style>
-
-&nbsp; p { color: blue; }
-
-
-
-Externo: CSS separado em um arquivo .css, vinculado ao HTML com a tag <link>. É a forma mais recomendada para sites maiores, por permitir reutilização e melhor organização.
-Exemplo: <link rel="stylesheet" href="estilos.css">
-
-A escolha entre essas formas depende da complexidade do projeto. Em geral, projetos grandes e colaborativos devem usar CSS externo.
-
-3) As tags <div> e <span> são elementos usados para estruturar o conteúdo em HTML, mas têm comportamentos diferentes.
-
-<div> é um elemento de bloco (block-level), ou seja, ocupa toda a largura disponível e força uma quebra de linha antes e depois. É usada para agrupar seções maiores da interface, como containers de texto, imagens ou componentes completos.
-
-<span> é um elemento inline, ou seja, ocupa apenas o espaço necessário ao seu conteúdo e não quebra linha. É usada para aplicar estilos ou agrupar conteúdo dentro de textos, como uma palavra ou frase específica.
-
-Exemplo:
-
-<div class="card">
-  <h2>Título</h2>
-  <p>Texto de exemplo.</p>
-</div>
-
-<p>Este texto tem uma <span style="color:red;">palavra colorida</span>.</p>
-
-
-4) A tag <head> serve para conter metadados e configurações da página HTML que não são exibidas diretamente no conteúdo visual. Esses dados ajudam navegadores, mecanismos de busca e dispositivos assistivos a interpretar melhor a página.
-
-Três elementos comuns dentro do <head> são:
-
-<title>: Define o título da aba do navegador.
-
-<meta>: Contém metadados como codificação (charset), descrição, autor etc.
-
-<link>: Utilizado para importar arquivos externos, como folhas de estilo CSS.
-
-Outros exemplos incluem <style>, <script> (quando o JS é embutido), e <base>.
 
 5) Listas ordenadas <ol> apresentam itens numerados, o que indica uma sequência ou ordem de execução. Já listas não ordenadas <ul> usam marcadores simples (como bolinhas) e não indicam ordem.
 
@@ -350,5 +304,6 @@ console.log(`${p1.nome} (Poder: ${poder1}) vs ${p2.nome} (Poder: ${poder2})`);
 if (poder1 > poder2) console.log(`Vencedor: ${p1.nome}`);
 
 else if (poder2 > poder1) console.log(`Vencedor: ${p2.nome}`);
+
 
 else console.log("Empate!");
