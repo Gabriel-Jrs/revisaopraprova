@@ -1,1 +1,329 @@
 # revisaopraprova
+1- O significa "Not-a-Number", situação que acontece quando, por exemplo, em uma divisão por 0: 0/0
+
+2- CSS inlane:
+    <p style="color: blue; text-align: center;">CSSSSSSSSSSSSSS .</p>
+CSS Embutido:
+    <head>
+      <style>
+        p {
+          color: green;
+        }
+        h1 {
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>TTTTTTTTTTTT</h1>
+      <p>Csssssssss.</p>
+    </body>
+CSS externo:
+    <head>
+      <link rel="stylesheet" type="text/css" href="estilos.css">
+    </head>
+    <body>
+      <h1>Título centralizado com fonte maior</h1>
+      <p>Este texto está formatado com CSS externo.</p>
+    </body>
+
+3-O <div> é para grandes blocos, enquanto o <span> é para pequenos trechos de conteúdo inline. Ambos são fundamentais para a estrutura e estilização de páginas web. 
+div:
+    <div class="header">
+      <h1>Meu Site</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+      <p>Este é o conteúdo principal do site.</p>
+      <img src="imagem.jpg" alt="Uma imagem">
+    </div>
+span:
+    <p>Este é um parágrafo com uma <span style="color: blue;">palavra em azul</span> e outra <span style="font-weight: bold;">em negrito</span>.</p>
+
+4- A tag <head> em um documento HTML define a seção de metadados do documento, ou seja, informações sobre o próprio HTML, que não são exibidas diretamente na página web, ela pode conter links, tittle and style
+
+5-A principal diferença entre as tags HTML <ul> e <ol> reside no tipo de lista que elas representam. <ul> (unordered list) é usada para criar listas não ordenadas, onde a ordem dos itens não é importante, e por padrão, os itens são exibidos com marcadores. <ol> (ordered list) é usada para listas ordenadas, onde a ordem dos itens é relevante, e por padrão, os itens são exibidos com números. 
+ul:
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+ol:
+<ol>
+  <li>Passo 1</li>
+  <li>Passo 2</li>
+  <li>Passo 3</li>
+</ol>
+
+6) A propriedade display no CSS define como um elemento deve ser exibido no layout da página. Ela determina se o elemento ocupa uma linha inteira, se fica ao lado de outros elementos ou se se comporta como uma combinação dos dois.
+
+block: O elemento ocupa toda a largura disponível e inicia em uma nova linha. Exemplo: <div>.
+
+inline: O elemento ocupa apenas o espaço necessário ao seu conteúdo e fica na mesma linha que os demais. Exemplo: <span>.
+
+inline-block: Combina o comportamento de inline (fica na linha) com a capacidade de definir width e height, como no block.
+
+7) O Box Model (modelo de caixa) é o conceito que descreve como os elementos HTML são representados visualmente como caixas retangulares.
+
+Da parte interna para a externa, o Box Model é composto por:
+
+Content: O conteúdo em si (texto, imagem, etc.).
+
+Padding: Espaço interno entre o conteúdo e a borda.
+
+Border: A borda da caixa.
+
+Margin: Espaço externo entre o elemento e outros ao redor.
+
+Esse modelo é essencial para controle de layout e espaçamento.
+
+8) Tags semânticas introduzidas no HTML5 ajudam a organizar o conteúdo com significado, melhorando a acessibilidade, SEO e manutenção do código.
+
+<header>: Usado para cabeçalhos de página ou seção, geralmente contém logo, título ou navegação.
+
+<section>: Representa uma seção lógica da página, como um bloco de conteúdo relacionado.
+
+<article>: Usado para conteúdos independentes e reutilizáveis, como posts de blog ou notícias.
+
+<footer>: Indica o rodapé de uma página ou seção, podendo conter informações de contato, direitos autorais, links etc.
+
+Exemplo:
+
+<header><h1>Blog de Tecnologia</h1></header>
+<section>
+  <article>
+    <h2>Nova tecnologia lançada</h2>
+    <p>Detalhes da novidade...</p>
+  </article>
+</section>
+<footer>© 2025 - Todos os direitos reservados</footer>
+
+
+9) O atributo target="_blank" em uma tag <a> faz com que o link seja aberto em uma nova aba ou janela do navegador.
+Apesar de útil, pode representar um risco de segurança: a nova aba pode acessar a janela original usando window.opener e potencialmente executar ataques (como phishing).
+
+Para evitar esse risco, deve-se adicionar o atributo rel="noopener noreferrer" junto ao target="_blank":
+
+<a href="https://exemplo.com" target="\_blank" rel="noopener noreferrer">Visite</a>
+
+
+10) A propriedade flex é usada em itens filhos de um container com display: flex, controlando a distribuição do espaço e o dimensionamento dos elementos.
+
+Ela aceita até três valores:
+flex: <crescimento> <encolhimento> <tamanho-base>.
+Exemplo simplificado:
+
+.item {
+  flex: 1; /* O item ocupa espaço igual ao dos outros com flex 1 */
+}
+
+
+Isso significa que o item pode crescer para preencher o espaço disponível de forma proporcional aos outros.
+
+11) Transições permitem que mudanças em propriedades CSS aconteçam de forma suave, em vez de instantânea. São ideais para efeitos visuais simples sem necessidade de JavaScript.
+
+Exemplo de uso:
+
+button {
+  background-color: blue;
+  transition: background-color 0.5s ease;
+}
+
+button:hover {
+  background-color: red;
+}
+
+Nesse exemplo, ao passar o mouse sobre o botão, a cor de fundo muda suavemente de azul para vermelho em 0.5 segundos.
+
+12) const produto = { nome: "Caneca", preco: 25.0, emEstoque: true };
+
+console.log(produto.emEstoque ? "Produto disponível" : "Produto indisponível");
+
+13) Um objeto em JavaScript pode ser usado para representar uma pessoa e suas características, como nome, peso, altura e temperatura corporal. Para saber se ela está com febre, basta verificar se a temperatura é superior a 37.5ºC.
+
+const pessoa = {
+  nome: "João",
+  peso: 70,
+  altura: 1.75,
+  temperatura: 38.2
+};
+
+14)const livro1 = { autor: "José Silva", ano: 1980, paginas: 200, nacionalidade: "Brasil" };
+
+const livro2 = { autor: "Ana Souza", ano: 1975, paginas: 150, nacionalidade: "Portugal" };
+
+const maisAntigo = livro1.ano < livro2.ano ? livro1 : livro2;
+
+const maisPaginas = livro1.paginas > livro2.paginas ? livro1 : livro2;
+
+const autorBrasileiro = [livro1, livro2].find(l => l.nacionalidade === "Brasil");
+
+console.log("Mais antigo:", maisAntigo);
+
+console.log("Mais páginas:", maisPaginas);
+
+console.log("Autor brasileiro:", autorBrasileiro || "Nenhum autor brasileiro");
+
+15)const filme = { nome: "Matrix", classificacao: 16 };
+
+console.log(`Filme: ${filme.nome}, Classificação: ${filme.classificacao}+ anos`);
+console.log(pessoa.temperatura > 37.5 ? "Está com febre" : "Não está com febre");
+
+16) var: Possui escopo de função. Pode ser redeclarada e sofre hoisting, o que pode gerar comportamento inesperado.
+let: Possui escopo de bloco. Não pode ser redeclarada no mesmo escopo. É mais previsível e segura que var.
+const: Igual ao let em relação ao escopo, mas impede reatribuição de valor (a referência não muda). Útil para valores constantes.
+Exemplo:
+
+var a = 1;
+let b = 2;
+const c = 3;
+
+b = 4;
+c = 5;
+
+17)  x = undefined
+15
+25
+30
+100
+200
+300
+100
+undefined
+undefined
+var da função
+let da função
+const da função
+string
+undefined
+undefined
+
+18) JavaScript é uma linguagem interpretada, leve e dinâmica, amplamente usada no desenvolvimento web para interatividade no navegador. Java, por outro lado, é uma linguagem compilada, fortemente tipada e orientada a objetos, usada para aplicações desktop, mobile (Android) e sistemas corporativos.
+
+Apesar do nome semelhante, são linguagens completamente distintas, com sintaxes e propósitos diferentes.
+
+19) == (igualdade abstrata): Compara valores após converter os tipos se forem diferentes.
+=== (igualdade estrita): Compara valores e também os tipos, sem conversão.
+Exemplo:
+5 == "5"      // true (valores iguais, tipos diferentes, mas convertidos)
+5 === "5"     // false (valores iguais, mas tipos diferentes)
+
+null == undefined   // true
+null === undefined  // false
+
+20) && (E lógico): Retorna verdadeiro se ambos os operandos forem verdadeiros.
+|| (OU lógico): Retorna verdadeiro se pelo menos um for verdadeiro.
+! (NÃO lógico): Inverte o valor booleano.
+Exemplos:
+
+if (idade > 18 && habilitado) {
+  console.log("Pode dirigir");
+}
+
+if (chovendo || frio) {
+  console.log("Leve casaco");
+}
+
+if (!fumante) {
+  console.log("Não fuma");
+}
+
+21) Sim. Objetos em JavaScript são dinâmicos, permitindo adicionar ou modificar propriedades após a criação.
+
+Exemplo:
+
+const pessoa = { nome: "Ana" };
+pessoa.idade = 30;
+console.log(pessoa);
+
+
+22) undefined: Valor padrão de variáveis declaradas mas não inicializadas. Indica ausência de valor atribuída automaticamente pelo JavaScript.
+null: Valor definido manualmente pelo programador para indicar ausência intencional de valor.
+Exemplo:
+let x;
+console.log(x); // undefined
+
+let y = null;
+console.log(y); // null
+
+23) Objetos são estruturas que armazenam dados em pares chave: valor. Podem representar entidades do mundo real.
+Exemplo:
+
+const carro = {
+  marca: "Ford",
+  modelo: "Fiesta",
+  ano: 2020
+};
+24) function sorteiaPoder() {
+
+  return Math.floor(Math.random() * 10) + 1;
+
+}
+
+let p1 = {
+
+  id: Number(prompt("Digite o ID do primeiro pokemão:")),
+
+  nome: prompt("Digite o nome do primeiro pokemão:"),
+
+  tipo: prompt("Digite o tipo do primeiro pokemão (agua, fogo, terra):").toLowerCase(),
+
+  poder: sorteiaPoder()
+
+};
+
+let p2 = {
+
+  id: Number(prompt("Digite o ID do segundo pokemão:")),
+
+  nome: prompt("Digite o nome do segundo pokemão:"),
+
+  tipo: prompt("Digite o tipo do segundo pokemão (agua, fogo, terra):").toLowerCase(),
+
+  poder: sorteiaPoder()
+
+};
+
+function temVantagem(tipo1, tipo2) {
+
+  return (
+
+    (tipo1 === "agua" && tipo2 === "fogo") ||
+
+    (tipo1 === "fogo" && tipo2 === "terra") ||
+
+    (tipo1 === "terra" && tipo2 === "agua")
+
+  );
+
+}
+
+let poder1 = p1.poder;
+
+let poder2 = p2.poder;
+
+ 
+
+if (temVantagem(p1.tipo, p2.tipo)) poder1 += 3;
+
+else if (temVantagem(p2.tipo, p1.tipo)) poder2 += 3;
+
+ 
+
+console.log(`${p1.nome} (Poder: ${poder1}) vs ${p2.nome} (Poder: ${poder2})`);
+
+ 
+
+if (poder1 > poder2) console.log(`Vencedor: ${p1.nome}`);
+
+else if (poder2 > poder1) console.log(`Vencedor: ${p2.nome}`);
+
+
+else console.log("Empate!");
